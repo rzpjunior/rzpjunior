@@ -1,20 +1,23 @@
-<!-- App.vue -->
 <template>
   <div>
-    <loading v-if="isLoading" />
+    <div v-if="isLoading">
+      <loading/>
+    </div>
     <div v-else>
-      <!-- Your main content goes here -->
+      <home/>
     </div>
   </div>
 </template>
 
 <script>
 import Loading from './components/Loading.vue';
+import Home from './components/Home.vue';
 
 export default {
   name: 'App',
   components: {
     Loading,
+    Home
   },
   data() {
     return {
