@@ -3,6 +3,7 @@
 import React, { ReactNode, useState, useEffect } from 'react';
 import Header from './Header';
 import Footer from './Footer';
+import Cursor from './Cursor';
 import dynamic from 'next/dynamic';
 
 const Loading = dynamic(() => import('./Loading'), { ssr: false });
@@ -24,12 +25,11 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <Header />
+      <Cursor />
       <main className="flex-grow container mx-auto">
         {loading && <Loading />}
         {!loading && children}
       </main>
-      <Footer />
     </div>
   );
 };

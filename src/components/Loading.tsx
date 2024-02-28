@@ -26,7 +26,7 @@ const Loading: React.FC = () => {
   }, [backoff, index]);
 
   return (
-    <div className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-75 z-50">
+    <div className="fixed inset-0 flex items-center justify-center bg-gray-900 bg-opacity-95 z-90">
       <div className="text-white text-4xl font-bold" style={{ fontFamily: 'monospace' }}>
         {text}
         {index < textToType.length && <span>_</span>}
