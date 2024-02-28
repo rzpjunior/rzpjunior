@@ -9,7 +9,7 @@ const Header: React.FC = () => {
         Lead Engineer at Motiolabs
       </h2>
       <p className='mt-4 max-w-xs leading-normal text-gray-400'>
-        I am a software engineer specializing in building high performance web applications.
+        I build pixel-perfect, engaging, and accessible digital experiences.
       </p>
     </header>
   );
