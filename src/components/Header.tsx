@@ -2,26 +2,16 @@ import Link from 'next/link';
 
 const Header: React.FC = () => {
   return (
-    <header className="bg-gray-900 text-white py-4">
-      <nav className="container mx-auto flex items-center justify-between">
-        <div className="text-lg font-bold">
-          <Link href="/">
-            <div className="hover:text-gray-300">rzpjunior</div>
-          </Link>
-        </div>
-        <ul className="flex space-x-4">
-          <li>
-            <Link href="/">
-              <div className="hover:text-gray-300">Home</div>
-            </Link>
-          </li>
-          <li>
-            <Link href="/about">
-              <div className="hover:text-gray-300">About</div>
-            </Link>
-          </li>
-        </ul>
-      </nav>
+    <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24">
+      <h1 className='text-4xl font-bold tracking-tight text-slate-200 sm:text-4xl'>
+        <a href="/">Rizky Putra Junior</a>
+      </h1>
+      <h2 className='mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl'>
+        Lead Engineer at Motiolabs
+      </h2>
+      <p className='mt-4 max-w-xs leading-normal text-gray-400'>
+        I am a software engineer specializing in building high performance web applications
+      </p>
     </header>
   );
 };

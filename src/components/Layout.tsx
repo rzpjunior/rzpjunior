@@ -1,35 +1,20 @@
-"use client";
-
-import React, { ReactNode, useState, useEffect } from 'react';
+import React, { ReactNode, useEffect } from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import Cursor from './Cursor';
-import dynamic from 'next/dynamic';
-
-const Loading = dynamic(() => import('./Loading'), { ssr: false });
 
 interface LayoutProps {
   children: ReactNode;
 }
 
 const Layout: React.FC<LayoutProps> = ({ children }) => {
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 2000);
-
-    return () => clearTimeout(timer);
-  }, []);
-
   return (
-    <div className="flex flex-col min-h-screen">
-      <Cursor />
-      <main className="flex-grow container mx-auto">
-        {loading && <Loading />}
-        {!loading && children}
-      </main>
+    <div className="mx-auto min-h-screen max-w-screen-xl px-6 py-12 md:px-12 md:py-20 lg:px-24">
+      <div className='lg:flex lg:justify-between lg:gap-4'>
+        <Header />
+        <main id="content" className='pt-24 lg:w-1/2 lg:py-24'>
+
+        </main>
+      </div>
     </div>
   );
 };

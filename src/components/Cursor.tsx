@@ -1,6 +1,8 @@
+"use client";
+
 import React, { useEffect, useState } from 'react';
 
-const GlowingCursor: React.FC = () => {
+const Cursor: React.FC = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -20,4 +22,4 @@ const GlowingCursor: React.FC = () => {
   );
 };
 
-export default GlowingCursor;
+export default Cursor;

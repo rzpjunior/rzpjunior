@@ -40,3 +40,42 @@ body {
   animation: blink 1s step-end infinite;
 }
 
+.columns {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.column {
+  flex: 1;
+}
+
+.left {
+  order: 2;
+}
+
+.right {
+  order: 1;
+}
+
+@media screen and (max-width: 640px) {
+  .columns {
+    flex-direction: column;
+  }
+
+  .column {
+    width: 100%;
+  }
+
+  .left,
+  .right {
+    order: initial;
+  }
+
+  .left {
+    margin-bottom: 1rem;
+  }
+
+  .right {
+    margin-top: 1rem;
+  }
+}
