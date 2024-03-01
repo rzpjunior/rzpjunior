@@ -1,15 +1,47 @@
 "use client";
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Header: React.FC = () => {
+  
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      setActiveLink(id);
     }
   };
+
   const [activeLink, setActiveLink] = useState<string>('about');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const aboutSection = document.getElementById('about');
+      const experienceSection = document.getElementById('experience');
+      const projectsSection = document.getElementById('projects');
+
+      if (
+        experienceSection &&
+        experienceSection.offsetTop <= window.pageYOffset + 50 &&
+        experienceSection.offsetTop + experienceSection.offsetHeight > window.pageYOffset + 50
+      ) {
+        setActiveLink('experience');
+      } else if (
+        projectsSection &&
+        projectsSection.offsetTop <= window.pageYOffset + 50 &&
+        projectsSection.offsetTop + projectsSection.offsetHeight > window.pageYOffset + 50
+      ) {
+        setActiveLink('projects');
+      } else {
+        setActiveLink('about');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const handleSetActiveLink = (link: string) => {
     setActiveLink(link);
@@ -41,7 +73,7 @@ const Header: React.FC = () => {
               >
                 <span 
                   className=
-                    {`${activeLink === 'about' ? 'nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all w-16 bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none' : 'nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none'}`}
+                    {`${activeLink === 'about' ? 'nav-indicator mr-4 h-px transition-all w-16 bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none' : 'nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none'}`}
                   >
                 </span>
                 <span 
@@ -63,7 +95,7 @@ const Header: React.FC = () => {
               >
                 <span 
                   className=
-                    {`${activeLink === 'experience' ? 'nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all w-16 bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none' : 'nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none'}`}
+                    {`${activeLink === 'experience' ? 'nav-indicator mr-4 h-px transition-all w-16 bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none' : 'nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none'}`}
                   >
                 </span>
                 <span 
@@ -85,7 +117,7 @@ const Header: React.FC = () => {
               >
                 <span 
                   className=
-                    {`${activeLink === 'projects' ? 'nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all w-16 bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none' : 'nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none'}`}
+                    {`${activeLink === 'projects' ? 'nav-indicator mr-4 h-px transition-all w-16 bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none' : 'nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none'}`}
                   >
                 </span>
                 <span 

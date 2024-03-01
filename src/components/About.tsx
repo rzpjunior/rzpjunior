@@ -16,11 +16,11 @@ const About: React.FC = () => {
                 <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" href=""> huge corporation</a>.
             </p>
             <p className="mb-4 text-gray-400">
-                My main focus these days is building products and leading projects for our clients at Motiolabs. I most enjoy building software in the sweet spot where design and engineering meet — 
+                My main focus these days is building frameworks, libraries, products and leading projects for our clients at Motiolabs. I most enjoy building software in the sweet spot where design and engineering meet — 
                 things that look good but are also built well under the hood.
             </p>
             <p className="mb-4 text-gray-400">
-            When I’m not at coding, I’m usually play games, reading, hanging out with my friends and family, or Studying about anything
+            When I’m not at coding, I’m usually play games, reading, hanging out with my friends and family, or studying about anything
             </p>
         </div>
       </section>
