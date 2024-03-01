@@ -8,7 +8,7 @@ const Page = () => {
   return (
     <div>
       <Cursor/>
-      <LoadingOverlay children={undefined}/>
+      {/* <LoadingOverlay children={undefined}/> */}
       <Layout children={undefined}/>
     </div>
   );

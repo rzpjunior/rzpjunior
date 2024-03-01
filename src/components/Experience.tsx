@@ -51,7 +51,7 @@ const Experience: React.FC = () => {
                                 and as the lead engineer for Learnhub, I oversaw the entire development process 
                                 and ensured smooth collaboration between teams, 
                                 from initial planning to final deployment. 
-                                I managed critical technical aspects such as Kubernetes clusters on AWS, 
+                                I managed critical technical aspects such as frameworks, libraries and DevOps architecture, 
                                 guaranteeing top performance and reliability. Additionally, 
                                 I worked closely with stakeholders to understand their needs and 
                                 documented all technical procedures thoroughly.
@@ -267,7 +267,7 @@ const Experience: React.FC = () => {
                 </li>
             </ol>
             <a 
-                href="../pdf/RizkyPJuniorResume.pdf"
+                href="https://1o9rejpe1ewqxu5l.public.blob.vercel-storage.com/RizkyPJuniorResume-PASwRiOtIuk5o2NvMsfHhKgg9z6CiF.pdf"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base"
