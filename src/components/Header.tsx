@@ -22,14 +22,14 @@ const Header: React.FC = () => {
 
       if (
         experienceSection &&
-        experienceSection.offsetTop <= window.pageYOffset + 50 &&
-        experienceSection.offsetTop + experienceSection.offsetHeight > window.pageYOffset + 50
+        experienceSection.offsetTop <= window.scrollY + 50 &&
+        experienceSection.offsetTop + experienceSection.offsetHeight > window.scrollY + 50
       ) {
         setActiveLink('experience');
       } else if (
         projectsSection &&
-        projectsSection.offsetTop <= window.pageYOffset + 50 &&
-        projectsSection.offsetTop + projectsSection.offsetHeight > window.pageYOffset + 50
+        projectsSection.offsetTop <= window.scrollY + 50 &&
+        projectsSection.offsetTop + projectsSection.offsetHeight > window.scrollY + 50
       ) {
         setActiveLink('projects');
       } else {
