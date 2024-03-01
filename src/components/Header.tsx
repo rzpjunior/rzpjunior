@@ -3,6 +3,12 @@
 import React, { useState } from 'react';
 
 const Header: React.FC = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  };
   const [activeLink, setActiveLink] = useState<string>('about');
 
   const handleSetActiveLink = (link: string) => {
@@ -10,7 +16,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/1 lg:flex-col lg:justify-between lg:py-24">
+    <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/1 lg:flex-col lg:justify-between lg:py-24">
     {/* <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/1 lg:flex-col lg:justify-between lg:py-24"> */}
       <div>
         <h1 className='text-4xl font-bold tracking-tight text-slate-200 sm:text-4xl'>
@@ -26,42 +32,66 @@ const Header: React.FC = () => {
           <ul className="mt-16 w-max">
             <li>
               <a 
-                className={`group flex items-center py-3 ${activeLink === 'about' ? 'active' : ''}`} 
+                className='group flex items-center py-3'
                 href="#about"
                 onClick={() => {
                   handleSetActiveLink('about');
+                  scrollToSection('about');
                 }}
               >
-                <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
-                <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
+                <span 
+                  className=
+                    {`${activeLink === 'about' ? 'nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all w-16 bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none' : 'nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none'}`}
+                  >
+                </span>
+                <span 
+                  className=
+                  {`${activeLink === 'about' ? 'nav-text text-xs font-bold uppercase tracking-widest text-slate-200 group-focus-visible:text-slate-200' : 'nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200'}`}
+                >
                   About
                 </span>
               </a>
             </li>
             <li>
               <a 
-                className={`group flex items-center py-3 ${activeLink === 'experience' ? 'active' : ''}`} 
+                className='group flex items-center py-3'
                 href="#experience"
                 onClick={() => {
                   handleSetActiveLink('experience');
+                  scrollToSection('experience');
                 }}
               >
-                <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
-                <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
+                <span 
+                  className=
+                    {`${activeLink === 'experience' ? 'nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all w-16 bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none' : 'nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none'}`}
+                  >
+                </span>
+                <span 
+                  className=
+                  {`${activeLink === 'experience' ? 'nav-text text-xs font-bold uppercase tracking-widest text-slate-200 group-focus-visible:text-slate-200' : 'nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200'}`}
+                >
                   Experience
                 </span>
               </a>
             </li>
             <li>
-              <a 
-                className={`group flex items-center py-3 ${activeLink === 'projects' ? 'active' : ''}`} 
+            <a 
+                className='group flex items-center py-3'
                 href="#projects"
                 onClick={() => {
                   handleSetActiveLink('projects');
+                  scrollToSection('projects');
                 }}
               >
-                <span className="nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none"></span>
-                <span className="nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200">
+                <span 
+                  className=
+                    {`${activeLink === 'projects' ? 'nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all w-16 bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none' : 'nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all group-hover:w-16 group-hover:bg-slate-200 group-focus-visible:w-16 group-focus-visible:bg-slate-200 motion-reduce:transition-none'}`}
+                  >
+                </span>
+                <span 
+                  className=
+                  {`${activeLink === 'projects' ? 'nav-text text-xs font-bold uppercase tracking-widest text-slate-200 group-focus-visible:text-slate-200' : 'nav-text text-xs font-bold uppercase tracking-widest text-slate-500 group-hover:text-slate-200 group-focus-visible:text-slate-200'}`}
+                >
                   Projects
                 </span>
               </a>
@@ -71,7 +101,7 @@ const Header: React.FC = () => {
       </div>
       <ul className='ml-1 mt-8 flex items-center'>
         <li className='mr-5 text-xs shrink-0'>
-          <a className='block hover:text-slate-200' href="https://github.com/rzpjunior">
+          <a className='block hover:text-slate-200' href="https://github.com/rzpjunior" target='_blank'>
             <span className='sr-only'>GitHub</span>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -92,8 +122,8 @@ const Header: React.FC = () => {
           </a>
         </li>
         <li className='mr-5 text-xs shrink-0'>
-          <a className='block hover:text-slate-200' href="https://github.com/rzpjunior">
-            <span className='sr-only'>GitHub</span>
+          <a className='block hover:text-slate-200' href="https://www.linkedin.com/in/rzpjunior/" target='_blank'>
+            <span className='sr-only'>LinkedIn</span>
             <svg
               xmlns='http://www.w3.org/2000/svg'
               viewBox='0 0 16 16'
