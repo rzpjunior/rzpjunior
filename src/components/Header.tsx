@@ -133,7 +133,7 @@ const Header: React.FC = () => {
       </div>
       <ul className='ml-1 mt-8 flex items-center'>
         <li className='mr-5 text-xs shrink-0'>
-          <a className='block hover:text-slate-200' href="https://github.com/rzpjunior" target='_blank'>
+          <a className='text-gray-400 block hover:text-slate-200' href="https://github.com/rzpjunior" target='_blank'>
             <span className='sr-only'>GitHub</span>
             <svg
               xmlns='http://www.w3.org/2000/svg'
@@ -154,7 +154,7 @@ const Header: React.FC = () => {
           </a>
         </li>
         <li className='mr-5 text-xs shrink-0'>
-          <a className='block hover:text-slate-200' href="https://www.linkedin.com/in/rzpjunior/" target='_blank'>
+          <a className='text-gray-400 block hover:text-slate-200' href="https://www.linkedin.com/in/rzpjunior/" target='_blank'>
             <span className='sr-only'>LinkedIn</span>
             <svg
               xmlns='http://www.w3.org/2000/svg'

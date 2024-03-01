@@ -10,10 +10,10 @@ const About: React.FC = () => {
             <p className="mb-4 text-gray-400">
                 Back in 2016, I decided to try my hand at creating an android game and tumbled head first into the rabbit hole of coding and software development. Fast-forward to today, 
                 and I’ve had the privilege of building software for a
-                <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" href="/"> car company</a>, a 
-                <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" href="/"> consultant</a>, a
-                <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" href=""> start-up</a>, and a
-                <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" href=""> huge corporation</a>.
+                <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" target="_blank" href="https://www.mercedes-benz.co.id/"> car company</a>, a 
+                <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" target="_blank" href="https://moonlay.com/"> consultant</a>, a
+                <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" target="_blank" href="https://www.instagram.com/edenfarm_id/"> start-up</a>, and a
+                <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" target="_blank" href="https://www.idx.co.id/id"> huge corporation</a>.
             </p>
             <p className="mb-4 text-gray-400">
                 My main focus these days is building frameworks, libraries, products and leading projects for our clients at Motiolabs. I most enjoy building software in the sweet spot where design and engineering meet — 
