@@ -20,7 +20,7 @@ const About: React.FC = () => {
                 things that look good but are also built well under the hood.
             </p>
             <p className="mb-4 text-gray-400">
-            When I’m not at coding, I’m usually play games, reading, hanging out with my friends and family, or studying about anything
+            When I’m not at coding, I’m usually play games, reading, hanging out with my friends and family, or scrolling memes on facebook because i don't have any other social media.
             </p>
         </div>
       </section>
