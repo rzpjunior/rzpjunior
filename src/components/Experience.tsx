@@ -48,7 +48,7 @@ const Experience: React.FC = () => {
                             </h3>
                             <p className="mt-2 text-sm leading-normal text-gray-400">
                                 As a lead engineer at myDigiLearn Telkom Indonesia
-                                and as the lead engineer for Learnhub, I oversaw the entire development process 
+                                and as the lead engineer for Learnhub SaaS Platform, I oversaw the entire development process 
                                 and ensured smooth collaboration between teams, 
                                 from initial planning to final deployment. 
                                 I managed critical technical aspects such as frameworks, libraries and DevOps architecture, 
@@ -56,6 +56,54 @@ const Experience: React.FC = () => {
                                 I worked closely with stakeholders to understand their needs and 
                                 documented all technical procedures thoroughly.
                             </p>
+                            <ul className="mt-2 flex flex-wrap">
+                                <li className="mr-4">
+                                    <a 
+                                        className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300" 
+                                        href="https://learnhub.id/"
+                                        target="_blank"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            className="mr-1 h-3 w-3"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z"
+                                            ></path>
+                                            <path
+                                                d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z"
+                                            ></path>
+                                        </svg>
+                                        <span>Learnhub</span>
+                                    </a>
+                                </li>
+                                <li className="mr-4">
+                                    <a 
+                                        className="relative mt-2 inline-flex items-center text-sm font-medium text-slate-300 hover:text-teal-300 focus-visible:text-teal-300" 
+                                        href="https://mydigilearn.id/"
+                                        target="_blank"
+                                    >
+                                        <svg
+                                            xmlns="http://www.w3.org/2000/svg"
+                                            viewBox="0 0 20 20"
+                                            fill="currentColor"
+                                            className="mr-1 h-3 w-3"
+                                            aria-hidden="true"
+                                        >
+                                            <path
+                                                d="M12.232 4.232a2.5 2.5 0 013.536 3.536l-1.225 1.224a.75.75 0 001.061 1.06l1.224-1.224a4 4 0 00-5.656-5.656l-3 3a4 4 0 00.225 5.865.75.75 0 00.977-1.138 2.5 2.5 0 01-.142-3.667l3-3z"
+                                            ></path>
+                                            <path
+                                                d="M11.603 7.963a.75.75 0 00-.977 1.138 2.5 2.5 0 01.142 3.667l-3 3a2.5 2.5 0 01-3.536-3.536l1.225-1.224a.75.75 0 00-1.061-1.06l-1.224 1.224a4 4 0 105.656 5.656l3-3a4 4 0 00-.225-5.865z"
+                                            ></path>
+                                        </svg>
+                                        <span>myDigiLearn</span>
+                                    </a>
+                                </li>
+                            </ul>
                             <ul className="nt-2 flex flex-wrap" aria-label="Technologies used">
                                 <li className="mr-1.5 mt-2">
                                     <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
@@ -315,11 +363,6 @@ const Experience: React.FC = () => {
                                 <li className="mr-1.5 mt-2">
                                     <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
                                         JavaScript
-                                    </div>
-                                </li>
-                                <li className="mr-1.5 mt-2">
-                                    <div className="flex items-center rounded-full bg-teal-400/10 px-3 py-1 text-xs font-medium leading-5 text-teal-300 ">
-                                        VueJS
                                     </div>
                                 </li>
                                 <li className="mr-1.5 mt-2">
