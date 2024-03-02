@@ -16,7 +16,7 @@ const About: React.FC = () => {
                 <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" target="_blank" href="https://www.idx.co.id/id"> huge corporation</a>.
             </p>
             <p className="mb-4 text-gray-400">
-                My main focus these days is building frameworks, libraries, products and leading projects for our clients at Motiolabs. I most enjoy building software in the sweet spot where design and engineering meet — 
+                My main focus these days is building frameworks, libraries, products and leading projects for our clients at <a className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300" target="_blank" href="https://www.motiolabs.com/"> Motiolabs</a>. I most enjoy building software in the sweet spot where design and engineering meet — 
                 things that look good but are also built well under the hood.
             </p>
             <p className="mb-4 text-gray-400">
