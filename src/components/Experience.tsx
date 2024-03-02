@@ -141,13 +141,13 @@ const Experience: React.FC = () => {
                             </h3>
                             <p className="mt-2 text-sm leading-normal text-gray-400">
                                 Led a team to create a Microfrontends Architecture using VueJS, 
-                                ensuring it was ready for production. Managed CI/CD pipelines for seamless 
-                                integration and deployment on AWS Kubernetes clusters. 
-                                Implemented automatic printing for a Warehouse Management System using 
-                                Java and Laravel. Developed coding standards and conducted testing with Cypress. 
-                                Collaborated on a Dashboard system combining VueJS and Golang for 
-                                Finance and Warehouse systems. Reviewed and tested prototypes to 
-                                ensure user-friendliness before launch.
+                                ensuring it was ready for production. Managed CI/CD pipelines 
+                                for seamless integration and deployment. Implemented automatic 
+                                printing and weigh scaling for a Warehouse Management System using 
+                                Java and Laravel. Developed coding standards and conducted testing 
+                                with Cypress. Collaborated on a Dashboard system combining VueJS 
+                                and Golang for Finance and Warehouse systems. Reviewed and tested 
+                                prototypes to ensure user-friendliness before launch.
                             </p>
                             <ul className="nt-2 flex flex-wrap" aria-label="Technologies used">
                                 <li className="mr-1.5 mt-2">
@@ -281,7 +281,7 @@ const Experience: React.FC = () => {
                                     >
                                         <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                                         <span>
-                                            Fullstack Developer · 
+                                            .NET Developer · 
                                             {/* ---- */}
                                             <span className="inline-block">
                                                 &nbsp;Ebiz Cipta
@@ -304,7 +304,7 @@ const Experience: React.FC = () => {
                             </h3>
                             <p className="mt-2 text-sm leading-normal text-gray-400">
                                 Participated in various development projects, including collaborating on a 
-                                management system for Mercedes-Benz Indonesia using VueJS and ChartJS,
+                                management system for Mercedes-Benz Indonesia using DevExpress and .NET Core,
                                 developing dashboard document systems for PT Donggi Senoro, and creating 
                                 dashboard data systems for PT Suzuki Indonesia. 
                                 Contributed to the development of a Timesheet & Attendance System 
@@ -348,7 +348,7 @@ const Experience: React.FC = () => {
                 </li>
             </ol>
             <a 
-                href="https://1o9rejpe1ewqxu5l.public.blob.vercel-storage.com/RizkyPJuniorResumePDF-SMsitSsCpORQ5vXe9RCckugmDI380q.pdf"
+                href="https://1o9rejpe1ewqxu5l.public.blob.vercel-storage.com/RizkyPutraJuniorResume-a0Kpos2bpFzsB1j5dU6QJnRYxxyd8q.pdf"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base"
