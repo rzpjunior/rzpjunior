@@ -3,7 +3,7 @@
 
 - 🌱 I’m currently learning **Cybersecurity & Cloud Computing**
 
-- 👨‍💻 View my website at [rzpjunior.com](rzpjunior.com)
+- 👨‍💻 View my website at [https://rzpjunior.com](https://rzpjunior.com)
 
 - 📫 How to reach me **rizkyputrajunior@gmail.com**
 
