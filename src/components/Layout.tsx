@@ -4,6 +4,7 @@ import React, { ReactNode, useState } from 'react';
 import Header from './Header';
 import About from './About';
 import Experience from './Experience';
+import Projects from './Projects';
 import Footer from './Footer';
 import LoadingOverlay from '../components/LoadingOverlay';
 
@@ -28,6 +29,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <main id="content" className='pt-24 lg:w-1/2 lg:py-24'>
               <About />
               <Experience />
+              <Projects />
               <Footer />
           </main>
         </div>
