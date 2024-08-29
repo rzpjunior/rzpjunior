@@ -391,7 +391,7 @@ const Experience: React.FC = () => {
                 </li>
             </ol>
             <a 
-                href="https://1o9rejpe1ewqxu5l.public.blob.vercel-storage.com/RizkyPJunior-Resume-OZg1xcUkv0NqDGJOuWj4gcaKxrbwnY.pdf"
+                href="https://1o9rejpe1ewqxu5l.public.blob.vercel-storage.com/RizkyPJunior-Resume-8T5k6M0v9HubxfIgWJya5Kj6JRS9d2.pdf"
                 target="_blank"
                 rel="noreferrer noopener"
                 className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300 font-semibold text-slate-200 group/link text-base"
