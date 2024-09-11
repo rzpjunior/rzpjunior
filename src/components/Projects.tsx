@@ -15,13 +15,13 @@ const Projects: React.FC = () => {
                         <h3>
                             <a 
                                 className="inline-flex items-baseline font-medium leading-tight text-slate-200 hover:text-teal-300 focus-visible:text-teal-300  group/link text-base"
-                                href="https://frontify-rho.vercel.app/"
+                                href="https://www.frontifix.com/"
                                 target="_blank"
                                 rel="noreferrer noopener"
                             >
                                 <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                                 <span>
-                                    Frontify
+                                    Frontifix
                                     <span className="inline-block">
                                         <svg 
                                             xmlns="http://www.w3.org/2000/svg" 
@@ -40,7 +40,7 @@ const Projects: React.FC = () => {
                             </a>
                         </h3>
                         <p className="mt-2 text-sm leading-normal text-gray-400">
-                            Frontify makes UI design easy with AI-powered tools. Create beautiful interfaces fast using text or image prompts. Customize with color themes and choose from Tailwind or Bootstrap styles. Manage and adjust your designs with simple, interactive tools. 
+                            Frontifix makes UI design easy with AI-powered tools. Create beautiful interfaces fast using text or image prompts. Customize with color themes and choose from Tailwind or Bootstrap styles. Manage and adjust your designs with simple, interactive tools. 
                         </p>
                     </div>
                     <img 
