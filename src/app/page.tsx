@@ -5,11 +5,11 @@ const Cursor = dynamic(() => import('../components/Cursor'), { ssr: false });
 
 const Page = () => {
   return (
-    // <div>
-    //   <Cursor/>
-    //   <Layout children={undefined}/>
-    // </div>
-    <div></div>
+    <div>
+      <Cursor/>
+      <Layout children={undefined}/>
+    </div>
+    //<div></div>
   );
 };
 
